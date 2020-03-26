@@ -2,3 +2,127 @@ div{
   border: 1px solid black;
   padding: 5px;
 }
+
+.container{
+  display: flex;
+}
+
+.heading{
+  display: flex;
+}
+
+.navigation{
+  display: flex;
+}
+
+.content{
+  display: flex;
+}
+
+.side{
+  display: flex;
+}
+
+.main{
+  display: flex;
+}
+
+.nav-box, .side-box, .heading-box{
+  text-align: center;
+}
+
+/* Cell-phone screen */
+@media (max-width : 600px){
+  .container{
+    flex-direction: column;
+  }
+  .heading{
+    display: none;
+  }
+  .navigation{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .nav-box{
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .content{
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width : 601px) and (max-width : 990px){
+  .container{
+    flex-direction: column;
+  }
+  .heading{
+    display: none;
+  }
+  .navigation{
+    justify-content: space-evenly;
+  }
+  .nav-box{
+    margin: 10px;
+    width: 100%;
+  }
+  .content{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .side{
+    flex-grow: 1;
+    flex-direction: column;
+    width: 33%;
+  }
+  .side-box{
+    height : 100%;
+  }
+  .main{
+    flex-grow: 2;
+    width: 66%;
+    flex-direction: column;
+  }
+}
+
+@media (min-width : 991px){
+  .container{
+    flex-direction: column;
+  }
+  .heading{
+    justify-content: space-evenly;
+  }
+
+  .heading-box{
+    margin: 10px;
+    width: 100%;
+  }
+
+  .navigation{
+    justify-content: space-evenly;
+  }
+  .nav-box{
+    margin: 10px;
+    width: 100%;
+  }
+  .content{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .side{
+    flex-grow: 1;
+    flex-direction: column;
+    width: 20%;
+  }
+  .side-box{
+    height : 100%;
+  }
+  .main{
+    flex-grow: 4;
+    width: 60%;
+  }
+}
