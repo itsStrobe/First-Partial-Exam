@@ -13,3 +13,9 @@ total 4
 strobe@Mipha:~/Code/Tec/WebDevelopment/Exam_1/First-Partial-Exam/Coding-Challenge-1$ ls -l
 total 4
 -rwxrwxrwx 1 strobe strobe 685 mar 26 07:02 index.html
+
+4.- strobe@Mipha:~/Code/Tec/WebDevelopment/Exam_1/First-Partial-Exam/Coding-Challenge-1$ git add .
+
+5.- strobe@Mipha:~/Code/Tec/WebDevelopment/Exam_1/First-Partial-Exam/Coding-Challenge-1$ git commit -m "Modified accessibility of index.html. Added README.md"
+
+6.- strobe@Mipha:~/Code/Tec/WebDevelopment/Exam_1/First-Partial-Exam/Coding-Challenge-1$ git push
